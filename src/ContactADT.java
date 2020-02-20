@@ -1,5 +1,7 @@
 public interface ContactADT<E> {
     void add ( E item );
 
+    E remove ( E item );
+
 
 }
