@@ -5,6 +5,6 @@ public interface ContactADT<E> {
 
     int search ( E item );
 
-
+    void print ();
 
 }
