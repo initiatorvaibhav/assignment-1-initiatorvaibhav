@@ -3,5 +3,8 @@ public interface ContactADT<E> {
 
     E remove ( E item );
 
+    int search ( E item );
+
+
 
 }
