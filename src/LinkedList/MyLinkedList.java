@@ -50,6 +50,11 @@ public class MyLinkedList<E> implements ContactADT<E> {
 
     @Override
     public void print () {
+        System.out.println ( "[" );
+        for (int i = 0; i < size; i++) {
+            E data = this.getNode ( i ).getData ();
+
+        }
 
     }
 
