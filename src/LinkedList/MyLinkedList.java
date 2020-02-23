@@ -11,8 +11,19 @@ public class MyLinkedList<E> implements ContactADT<E> {
             throw new IndexOutOfBoundsException ( Integer.toString ( index ) );
         } else if (index == 0) {
             addFirst ( item );
+        } else {
+            Node<E> temp = getNode ( index - 1 );
+            addAfter ( temp, item );
         }
 
+    }
+
+    private void addAfter ( Node<E> temp, E item ) {
+    }
+
+    private Node<E> getNode ( int i ) {
+        Node<E> response = head;
+        return response;
     }
 
     private void addFirst ( E item ) {
