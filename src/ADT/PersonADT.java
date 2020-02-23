@@ -7,6 +7,6 @@ public interface PersonADT {
 
     String personContact ( String item );
 
-    //String emailID(String item);*/
+    String emailID ( String item );
 
 }
