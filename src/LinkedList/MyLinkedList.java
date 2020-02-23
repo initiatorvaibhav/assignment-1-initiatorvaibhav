@@ -27,6 +27,8 @@ public class MyLinkedList<E> implements ContactADT<E> {
     }
 
     private void addFirst ( E item ) {
+        head = new Node<> ( item, head );
+        size++;
     }
 
     @Override
