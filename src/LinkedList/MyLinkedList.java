@@ -9,8 +9,13 @@ public class MyLinkedList<E> implements ContactADT<E> {
     public void add ( int index, E item ) {
         if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException ( Integer.toString ( index ) );
+        } else if (index == 0) {
+            addFirst ( item );
         }
 
+    }
+
+    private void addFirst ( E item ) {
     }
 
     @Override
