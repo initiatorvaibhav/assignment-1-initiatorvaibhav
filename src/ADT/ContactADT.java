@@ -3,7 +3,7 @@ package ADT;
 public interface ContactADT<E> {
     void add ( E item );
 
-    E remove ( int index );
+    E remove ();
 
     int search ( E item );
 

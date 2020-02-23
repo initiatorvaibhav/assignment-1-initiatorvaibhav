@@ -38,9 +38,17 @@ public class MyLinkedList<E> implements ContactADT<E> {
         add ( size, item );
     }
 
+    public E remove ( int index ) {
+        E response = null;
+        if (index < 0 | index > size) {
+            throw new IndexOutOfBoundsException ( Integer.toString ( index ) );
+        }
+        return response;
+    }
+
     @Override
-    public E remove ( E item ) {
-        return null;
+    public E remove () {
+        return remove ( size - 1 );
     }
 
     @Override
