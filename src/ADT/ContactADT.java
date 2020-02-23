@@ -9,4 +9,6 @@ public interface ContactADT<E> {
 
     void print ();
 
+    E get ( int index );
+
 }
