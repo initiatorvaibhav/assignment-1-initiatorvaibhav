@@ -3,6 +3,8 @@ package LinkedList;
 import ADT.ContactADT;
 
 public class MyLinkedList<E> implements ContactADT<E> {
+
+
     @Override
     public void add ( E item ) {
 
@@ -20,6 +22,12 @@ public class MyLinkedList<E> implements ContactADT<E> {
 
     @Override
     public void print () {
+
+    }
+
+    private static class Node<E> {
+        private E data;
+        private Node<E> next;
 
     }
 }
