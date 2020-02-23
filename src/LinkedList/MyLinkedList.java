@@ -18,7 +18,9 @@ public class MyLinkedList<E> implements ContactADT<E> {
 
     }
 
-    private void addAfter ( Node<E> temp, E item ) {
+    private void addAfter ( Node<E> node, E item ) {
+        node.next = new Node<> ( item, node.next );
+        size++;
     }
 
     private Node<E> getNode ( int i ) {
