@@ -40,11 +40,19 @@ public class MyLinkedList<E> implements ContactADT<E> {
 
     public E remove ( int index ) {
         E response = null;
-        if (index < 0 | index > size) {
+        if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException ( Integer.toString ( index ) );
         } else if (index == 0) {
             response = removeFirst ();
+        } else {
+            Node<E> previousNode = getNode ( index - 1 );
+            response = removeAfter ( previousNode );
         }
+        return response;
+    }
+
+    private E removeAfter ( Node<E> previousNode ) {
+        E response = null;
         return response;
     }
 
