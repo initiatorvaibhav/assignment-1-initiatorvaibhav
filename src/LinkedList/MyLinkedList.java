@@ -6,6 +6,13 @@ public class MyLinkedList<E> implements ContactADT<E> {
     public int size = 0;
     private Node<E> head = null;
 
+    public void add ( int index, E item ) {
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException ( Integer.toString ( index ) );
+        }
+
+    }
+
     @Override
     public void add ( E item ) {
 
