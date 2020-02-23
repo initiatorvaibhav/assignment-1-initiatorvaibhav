@@ -51,8 +51,15 @@ public class MyLinkedList<E> implements ContactADT<E> {
         return response;
     }
 
-    private E removeAfter ( Node<E> previousNode ) {
+    private E removeAfter ( Node<E> node ) {
         E response = null;
+        Node<E> temp = node.getNext ();
+        if (temp != null) {
+            node.next = temp.getNext ();
+            size--;
+            response = temp.getData ();
+
+        }
         return response;
     }
 
