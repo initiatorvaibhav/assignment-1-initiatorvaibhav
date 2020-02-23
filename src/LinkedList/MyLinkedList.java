@@ -35,7 +35,7 @@ public class MyLinkedList<E> implements ContactADT<E> {
 
     @Override
     public void add ( E item ) {
-
+        add ( size, item );
     }
 
     @Override
