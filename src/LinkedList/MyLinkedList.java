@@ -3,7 +3,8 @@ package LinkedList;
 import ADT.ContactADT;
 
 public class MyLinkedList<E> implements ContactADT<E> {
-
+    public int size = 0;
+    private Node<E> head = null;
 
     @Override
     public void add ( E item ) {
@@ -47,10 +48,6 @@ public class MyLinkedList<E> implements ContactADT<E> {
         private Node ( E data ) {
             this.data = data;
         }
-
-
-
-
 
     }
 }
